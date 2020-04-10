@@ -1,0 +1,451 @@
+                                                          PYTHON TRAINING ASSIGNMENT
+
+
+
+
+
+Chaitra Krishnamurthy
+SAP Business Analyst | Puget Sound Energy
+ConsultADD Inc
+531 S 47th Street Renton , WA
+PH: 201-283-4710
+Email:Chaitrak05@gmail.com
+
+
+Assignment 1
+
+Date :3/29/2020                                                        Ready to review: Yes
+
+TASK ONE: NUMBERS AND VARIABLES
+1.	Create three variables in a single line and assign different values to them and make sure their data types are different. Like one is int, another one is float and the last one is a string.
+>>> a,b,c=10,15.6,"Chaitra"
+>>> type(a)
+<type 'int'>
+>>> type(b)
+<type 'float'>
+>>> type(c)
+<type 'str'>
+
+
+2. 	Create a variable of value type complex and swap it with another variable whose value is an integer.
+>>> a=1+2j
+>>> b=10
+>>> a
+(1+2j)
+>>> a,b=b,a
+>>> a
+10
+>>> b
+(1+2j)
+
+3. 	Swap two numbers using the third variable as result name and do the same task without using any third variable.
+
+>>> a=10
+>>> b=20
+>>> b=a+b
+>>> a,b=b,a
+>>> print(a,b)
+(30, 10)
+
+4. 	Write a program to print the value given by the user by using both Python 2.x and Python 3.x Version.
+Version 2
+>>> a= raw_input(" Enter your username:")
+ Enter your username:Chaitrak10
+>>> print a
+Chaitrak10
+>>> b= raw_input("Enter your password:")
+Enter your password:pythonca2020
+>>> print b
+pythonca2020
+
+Version 3
+>>> a=input("Enter your username:")
+Enter your username:Chaitrak20
+>>> print(a)
+Chaitrak20
+>>> b=input("Enter your password:")
+Enter your password:pythonca2020
+>>> print(b)
+pythonca2020
+
+
+
+5. 	Write a program to complete the task given below:
+Ask the user to enter any 2 numbers in between 1-10 and add both of them to another variable call z.
+Use z for adding 30 into it and print the final result by using variable result.
+>>> a=int(input("Enter a value between 1-10:"))
+Enter a value between 1-10:5
+>>> b=int(input("Enter a value between 1-10:"))
+Enter a value between 1-10:6
+>>> sum= a+b
+>>> print(sum)
+11
+>>> z = sum
+>>> print(z)
+11
+>>> z=z+30
+>>> print(z)
+41
+ print("The final result is :", z)
+The final result is : 41
+6. 	Write a program to check the data type of the entered values. HINT: Printed output should say -  The input value data type is: int/float/string/etc
+
+>>> a=10
+>>> type(a)
+<class 'int'>
+>>> print("The input value data type is:", type(a).__name__)
+The input value data type is: int
+>>> b=20.7
+>>> type(b)
+<class 'float'>
+>>> print("The input value data type is:", type(b).__name__)
+The input value data type is:  float
+>>> c =1+2j
+>>> print("The input value data type is:", type(c).__name__)
+The input value data type is: complex
+ d="Chaitra"
+>>> print("The input value data type is:", type(d).__name__)
+The input value data type is: str
+
+
+
+7. 	Create Variable using CamelCase, LadderCase and UPPERCASE. (Refer:   https://capitalizemytitle.com/camel-case/) - Variable Conventions to write
+
+>>> newDoc = 'Ladder case'
+>>> Newdoc = 'Camelcase'
+>>> NEWDOC = 'Upper Case'
+
+8. 	If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again. Will it change the value. If Yes then Why?
+
+Yes , because it is dynamically typed .Python does not know the type of variable until the code is run.
+
+
+
+
+
+
+
+
+
+
+Assignment 2
+
+Date :3/31/2020                                                        Ready to review:Yes
+
+
+
+
+TASK TWO: OPERATORS AND DECISION MAKING STATEMENT
+1.	Write a program in Python to perform the following operation:
+If a number is divisible by 3 it should print “Consultadd” as a string
+
+Result:
+
+
+If a number is divisible by 5 it should print “c” as a string
+
+Result:
+
+
+
+If a number is divisible by both 3 and 5 it should print “Consultadd Python Training” as a string.
+
+
+Result:
+
+
+2. 	Write a program in Python to perform the following operator based task:
+Ask user to choose the following option first:
+If User Enter 1 - Addition 
+If User Enter 2 - Subtraction
+If User Enter 3 - Division
+If USer Enter 4 - Multiplication
+If User Enter 5 - Average
+a=30
+b=10
+print("Enter which operation would you like to perform")
+op=input("Choose any of the following operators +, -, *, /, avg :")
+
+result=0
+if op=='+':
+   result= a+b
+elif op=='-':
+   result= a-b
+elif op=='*':
+   result= a*b
+elif op=='/':
+   result= a/b
+elif op=='avg':
+ def average(a, b):
+  return (a + b) / 2.0
+result=average(a,b)
+
+else:
+   print("Entered input is not valid")
+
+print(a, op, b ,":", result)
+
+Result:
+
+
+
+
+Ask user to enter the 2 numbers in a variable for first and second for the first 4 options mentioned above.
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+
+print("Enter which operation would you like to perform")
+op=input("Choose any of the following operators +, -, *, /, avg :")
+
+result=0
+if op=='+':
+   result= a+b
+elif op=='-':
+   result= a-b
+elif op=='*':
+   result= a*b
+elif op=='/':
+   result= a/b
+else:
+   print("Entered input is not valid")
+
+print(a, op, b ,":", result)
+
+
+Result:
+
+
+Ask user to enter two more numbers as first1 and second2 for calculating the average as soon as user choose an option 5.
+print("Enter which operation would you like to perform")
+op=input("Choose any of the following operators +, -, *, /, avg :")
+
+
+result=0
+
+if op=='avg':
+   first1=int(input("Enter a number for first1:"))
+   second2=int(input("Enter a number for second2:"))
+   def average(first1, second2):
+       return (int(first1) + int(second2)) / 2.0
+   result = average(first1,second2)
+
+else:
+   print("Entered input is not valid")
+
+print(first1, op, second2 ,"=", result)
+
+Result:
+
+At the end if the answer of any operation is Negative print a statement saying “zsa”
+a=int(input("Enter the first number:"))
+b=int(input("Enter the second number:"))
+
+print("Enter which operation would you like to perform")
+op=input("Choose any of the following operators +, -, *, /, avg :")
+
+result=0
+if op=='+':
+   result= a+b
+elif op=='-':
+   result= a-b
+elif op=='*':
+   result= a*b
+elif op=='/':
+   result= a/b
+elif op=='avg':
+
+   def average(first1, second2):
+       return (first1 + second2) / 2.0
+   result=average(first1,second2)
+
+else:
+   print("Entered input is not valid")
+
+print(a, op, b ,"=", result)
+
+if result < 0:
+   print("ZSA")
+
+Result:
+
+NOTE: At a time user can perform one action at a time.
+3. 	Write a program in Python to implement the given flowchart:
+	
+
+
+a=int(input("Enter a value for a: "))
+b=int(input("Enter a value for b:"))
+c=int(input("Enter a value for c:"))
+avg= (a + b + c)/3
+print("Average is :" ,avg)
+
+if avg > a and avg > b and avg > c:
+   print("Average is higher than a , b, c")
+elif avg > a and avg > b:
+   print("Average is higher than a ,b")
+elif avg > a and avg > c:
+   print("Avearge is higher than a,c")
+elif avg > b and avg >c:
+   print("Average is higher than b,c")
+elif avg > a:
+   print("Average is just higher than a")
+elif avg > b:
+   print("Average is just higher than b ")
+elif avg > c:
+   print("Average is just higher than c")
+
+Result:
+
+4. 	Write a program in Python to break and continue if the following cases occurs:
+If user enters a negative number just break the loop and print “It’s Over”
+If user enters a positive number just continue in the loop and print “Good Going”
+
+Result:
+
+
+5.   Write a program in Python which will find all such numbers which are divisible  by 7 but are not a multiple of 5, between 2000 and 3200.
+b=[]
+for x in range(2000,3200):
+   a = x%5
+   c = x%7
+   print(x)
+   if c == 0 and a != 0:
+       b.append(x)
+   x=x+1
+
+
+print(b)
+
+Result:
+[2002, 2009, 2016, 2023, 2037, 2044, 2051, 2058, 2072, 2079, 2086, 2093, 2107, 2114, 2121, 2128, 2142, 2149, 2156, 2163, 2177, 2184, 2191, 2198, 2212, 2219, 2226, 2233, 2247, 2254, 2261, 2268, 2282, 2289, 2296, 2303, 2317, 2324, 2331, 2338, 2352, 2359, 2366, 2373, 2387, 2394, 2401, 2408, 2422, 2429, 2436, 2443, 2457, 2464, 2471, 2478, 2492, 2499, 2506, 2513, 2527, 2534, 2541, 2548, 2562, 2569, 2576, 2583, 2597, 2604, 2611, 2618, 2632, 2639, 2646, 2653, 2667, 2674, 2681, 2688, 2702, 2709, 2716, 2723, 2737, 2744, 2751, 2758, 2772, 2779, 2786, 2793, 2807, 2814, 2821, 2828, 2842, 2849, 2856, 2863, 2877, 2884, 2891, 2898, 2912, 2919, 2926, 2933, 2947, 2954, 2961, 2968, 2982, 2989, 2996, 3003, 3017, 3024, 3031, 3038, 3052, 3059, 3066, 3073, 3087, 3094, 3101, 3108, 3122, 3129, 3136, 3143, 3157, 3164, 3171, 3178, 3192, 3199]
+
+. What is the output of the following code examples?
+   x=123 
+   	   for i in x:
+   		print(i)
+    Int object is not iteratable
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(“error”)
+
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        Break
+Result:
+
+7. Write a program that prints all the numbers from 0 to 6 except 3 and 6.
+       Expected output: 0 1 2 4 5
+Note: Use ‘continue’ statement
+for x in range (6):
+   if x == 3 or x == 6:
+       continue
+   else:
+       print(x)
+   x = x+1
+
+Result:
+
+8.  Write a program that accepts a string as an input from user and calculate the number of digits and letters.
+     Expected output: consul12
+     Letters 6
+     Digits 2
+a = str(input("Enter a string:"))
+b = 0
+c = 0
+for i in a:
+   if i.isdigit():
+       b = b + 1
+   else:
+       c= c + 1
+print("Letters", c)
+print("Digits",b)
+
+
+9. Read the two parts of the question below: 
+ Write a program such that it asks users to “guess the lucky number”. If the correct number is guessed the program stops, otherwise it continues forever. 
+Modify the program so that it asks users whether they want to guess again each time. Use two variables, ‘number’ for the number and ‘answer’ for the answer to the question whether they want to continue guessing. The program stops if the user guesses the correct number or answers “no”. ( The program continues as long as a user has not answered “no” and has not guessed the correct number)
+import random
+
+number = random.randint(1, 9)
+
+while True:
+   a = int(input("Guess your lucky number:"))
+   if a == number:
+       print("Good guess")
+       answer = str(input("Do you want to guess again: Pres Y for yes and N for No:"))
+       if answer == 'Y':
+           number = random.randint(1, 9)
+       elif answer == 'N':
+           break
+
+Result:
+Guess your lucky number:1
+Guess your lucky number:2
+Guess your lucky number:3
+Guess your lucky number:4
+Guess your lucky number:5
+Guess your lucky number:6
+Guess your lucky number:7
+Good guess
+Do you want to guess again: Pres Y for yes and N for No:Y
+Guess your lucky number:7
+Good guess
+Do you want to guess again: Pres Y for yes and N for No:N
+
+10. Write a program that asks five times to guess the lucky number. Use a while loop and a counter, such as
+           		counter=1
+		While counter <= 5:
+			print(“Type in the”, counter, “number”
+			counter=counter+1
+The program asks for five guesses (no matter whether the correct number was guessed or not). If the correct number is guessed, the program outputs “Good guess!”, otherwise it outputs “Try again!”. After the fifth guess it stops and prints “Game over!”.
+import random
+
+number = random.randint(1, 9)
+counter = 1
+print(number)
+while counter <= 5:
+   a = int(input("Guess your lucky number:"))
+
+   if counter == 5:
+       print("Game Over!")
+       break
+   else:
+       if a == number:
+           print("Good guess")
+           break
+       else:
+           print("Try Again!")
+   counter += 1
+
+Result:
+6
+Guess your lucky number:1
+Try Again!
+Guess your lucky number:2
+Try Again!
+Guess your lucky number:3
+Try Again!
+Guess your lucky number:5
+Try Again!
+Guess your lucky number:9
+Game Over!
+
+Process finished with exit code 0
+
+
+11. In the previous question, insert “break” after the “Good guess!” print statement. “break” will terminate the while loop so that users do not have to continue guessing after they found the number. If the user does not guess the number at all, print “Sorry but that was not very successful”.
+
+
+
+Result:
+
+

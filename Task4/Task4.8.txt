@@ -1,0 +1,25 @@
+Front-end is a term that involves the building of webpages and user interfaces for web-applications. It implements the 
+structure, design, behavior, and animation of everything you see on the screen when you open up websites, web applications,
+ or mobile apps. The core 3 technologies that all modern front-end web developers work to master are HTML5, CSS,
+ and JavaScript.
+
+Some of the Front-end development technologies include:
+
+Angular
+React
+Vue.js
+Backbone.js
+polymer
+ember
+knockout
+
+Top companies using above technology
+
+Apple.
+Samsung.
+Microsoft.
+Alphabet.
+Intel.
+IBM.
+Facebook.
+Hon Hai Precision
